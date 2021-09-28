@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .first {
@@ -88,6 +89,7 @@ button:hover {
   background-color:#f0f4c3;
   width: 30rem;
   height: auto;
+  margin-left: 4rem;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -128,13 +130,18 @@ button:hover {
   color: #524c00;
 }
 
-#saveBtn {
-  margin-left: 180px;
+#clearBtn {
+  margin-left: 170px;
   border: 1px solid #7c8500;
   color: #7c8500;
 }
 
-#saveBtn:hover {
+#clearBtn:hover {
   background-color: #524c00;
   color: white;
+}
+
+.third {
+  width: 25rem;
+  height: auto;
 }

@@ -1,6 +1,7 @@
-// import './App.css';
+import './App.css';
 import { connect } from 'react-redux'
 import { useState, useRef } from 'react'
+import PieChart from './component/PieChart'
 
 function App() {
   const [task, setTask] = useState('')
@@ -172,9 +173,12 @@ function App() {
         <section className='taskDisplay'>
             <ul>
               {taskTimeItems}
-              <button id='saveBtn' onClick={clearAllTask}>Clear All</button>
+              <button id='clearBtn' onClick={clearAllTask}>Clear All</button>
             </ul>
         </section>
+      </article>
+      <article className="third">
+        <PieChart allTask={task_times} />
       </article>
     </main>
   );
