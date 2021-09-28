@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+body {
+  margin: 50px auto;
+  font-family: "Quicksand", sans-serif;
+  background-color: #fffffb;
+  color: #010b40;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.first {
+  background-color: #aabb97;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 28rem;
+  border-radius: 10px;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+}
+
+.taskTitle {
+  background-color: white;
+  width: 23rem;
+  height: 5rem;
+  transform: translate(-7%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.taskTitle input {
+  display: block;
+  font-family: "Quicksand", sans-serif;
+  margin: 1.5rem auto;
+  padding: 0.5rem;
+  border: 1px solid #387002;
+  border-radius: 10px;
+
+}
+
+.stopwatch {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 23rem;
+  height: 10rem;
+  transform: translate(-7%);
+}
+
+.stopwatch p {
+  font-size: 28px;
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: 1px solid #387002;
+  padding: 5px 10px;
+  border-radius: 7px;
+  color: #387002;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #387002;
+  color: #f8ffd7;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.second {
+  background-color:#f0f4c3;
+  width: 30rem;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.second ul {
+  list-style: none;
+}
+
+.second li {
+  background-color: #dce775;
+  margin: 0 35px 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.second li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+}
+
+.second li p {
+  font-size: 15px;
+}
+
+.second button {
+  outline: none;
+  background: transparent;
+  padding: 5px 10px;
+  color: #387002;
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+}
+
+.second button:hover {
+  color: #524c00;
+}
+
+#saveBtn {
+  margin-left: 180px;
+  border: 1px solid #7c8500;
+  color: #7c8500;
+}
+
+#saveBtn:hover {
+  background-color: #524c00;
+  color: white;
+}
