@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import { connect } from 'react-redux'
 import { useState, useRef } from 'react'
 
@@ -41,7 +41,36 @@ function App() {
     setTimer(0)
   }
 
-  const handleFinish = () => {
+  const finishTask = () => {
+    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+    
+    const months = ['January','February','March','April','May','June','July','August','September','October','November','December']
+
+    const now = new Date()
+    const year = now.getFullYear()
+    const numDay = now.getDate()
+    const day = days[ now.getDay() ]
+    const month = months[ now.getMonth() ]
+
+    fetch('http://localhost:8080/api/add-task', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          'year': year,
+          'month': month,
+          'numDay': numDay,
+          'day': day,
+          'task_title': task,
+          'task_duration': timer
+        })
+    })
+    .then(response => response.json())
+    .then(result => {
+      if(result.success) {
+        console.log(result.message)
+      }
+    })
+
     setTask_times([
       ...task_times,
       {
@@ -55,12 +84,30 @@ function App() {
     setTask('')
     setTimer(0)
   }
-  
+
   const deleteTask = (e) => {
     const taskTitle = e.target.name
     setTask_times((task_times.filter(item => item.task !== taskTitle)))
+
+    fetch('http://localhost:8080/api/delete-task', {
+      method: "DELETE",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        "task_title": taskTitle
+      })
+    })
+    .then(response => response.json()) 
+    .then(result => {
+      if(result.success) {
+        console.log(result.message)
+      }
+    })
   }
 
+  const clearAllTask = () => {
+    setTask_times([])
+  }
+  
   const formatTime = () => {
     const seconds = `0${(timer % 60)}`.slice(-2)
     const initMinutes = `${Math.floor(timer / 60)}`
@@ -117,7 +164,7 @@ function App() {
                 )
             }
             <button onClick={handleReset} disabled={!isActive}>Reset</button>
-            <button onClick={handleFinish}>Finish</button>
+            <button onClick={finishTask}>Finish</button>
           </div>
         </section>
       </article>
@@ -125,7 +172,7 @@ function App() {
         <section className='taskDisplay'>
             <ul>
               {taskTimeItems}
-              <button id='saveBtn'>Save</button>
+              <button id='saveBtn' onClick={clearAllTask}>Clear All</button>
             </ul>
         </section>
       </article>
