@@ -1,11 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 body {
-  margin: 50px auto;
+  margin: 0 auto;
   font-family: "Quicksand", sans-serif;
   background-color: #fffffb;
   color: #010b40;
 }
+
+/********************* Menu Page *********************/
+
+.navbar {
+  margin-left: 30px;
+  display: block;
+  margin: 1rem 0 5rem 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  text-decoration: none;
+  color: #338a3e;
+  padding-right: 1rem;
+}
+
+/********************* App Page *********************/
 
 .main-content {
   display: flex;
@@ -144,4 +165,29 @@ button:hover {
 .third {
   width: 25rem;
   height: auto;
+}
+
+/********************* History Page *********************/
+
+.history-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sidebar {
+  background-color: #aabb97;
+  width: 20rem;
+  height: 100vh;
+}
+
+.taskByDate {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #dce775;
+}
+
+.eachDate {
+  margin: auto 5rem;
 }

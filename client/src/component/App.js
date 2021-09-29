@@ -1,7 +1,7 @@
 import './App.css';
 import { connect } from 'react-redux'
 import { useState, useRef } from 'react'
-import PieChart from './component/PieChart'
+import PieChart from './PieChart'
 
 function App() {
   const [task, setTask] = useState('')
@@ -79,11 +79,8 @@ function App() {
         duration: timer
       }
     ])
-    setIsActive(false)
-    setIsPaused(false)
-    clearInterval(countRef.current)
+    handleReset()
     setTask('')
-    setTimer(0)
   }
 
   const deleteTask = (e) => {
