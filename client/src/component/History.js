@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
 import * as actionCreator from '../store/actCreators'
 import TaskDetails from './TaskDetails'
+import './History.css'
 
 function History(props) {
     const [showTasks, setShowTasks] = useState(false)
@@ -23,27 +24,22 @@ function History(props) {
         props.onSortByMonth(year, month)
     }
 
-    const allTasks = props.everyTask.map((task, index) => {
+    const allYrMonths = props.yearMonth.map((date, index) => {
         return (
-            <section key={index} className="eachDate">
-                <div>
-                    <h4>{task.month} {task.numday}, {task.day}</h4>
-                    <button onClick={() => showHideTasks(index)}>Show Details</button>
-                </div>
-                <div>
-                    {showTasks && <TaskDetails year={task.year} month={task.month} numDay={task.numday} day={task.day} />}
-                </div>
-            </section>
+            <button className="yrMonBtn" onClick={()=>sortByMonth(date.year, date.month)}>{date.month}</button>
         )
     })
 
-    const allYrMonths = props.yearMonth.map((date, index) => {
+    const allTasks = props.everyTask.map((task, index) => {
         return (
-            <div key={index}>
-                <ul>
-                    <li><button onClick={()=>sortByMonth(date.year, date.month)}>{date.month}</button></li>
-                </ul>
-            </div>
+            <section key={index} className="dateDetails">
+                <div className="eachDate" onClick={() => showHideTasks(index)}>
+                    <h4>{task.month} {task.numday}, {task.day}</h4>
+                </div>
+                <div className="eachDetails">
+                    {showTasks && <TaskDetails year={task.year} month={task.month} numDay={task.numday} day={task.day} />}
+                </div>
+            </section>
         )
     })
 
@@ -51,12 +47,11 @@ function History(props) {
         <main className="history-main">
             <article className="sidebar">
                 <h2>2021</h2>
-                {allYrMonths}
+                <div className="months">{allYrMonths}</div>
             </article>
             <article className="taskByDate">
                 {allTasks}
             </article>
-            
         </main>
     )
 }

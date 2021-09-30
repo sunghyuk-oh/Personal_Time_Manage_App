@@ -167,27 +167,3 @@ button:hover {
   height: auto;
 }
 
-/********************* History Page *********************/
-
-.history-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.sidebar {
-  background-color: #aabb97;
-  width: 20rem;
-  height: 100vh;
-}
-
-.taskByDate {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #dce775;
-}
-
-.eachDate {
-  margin: auto 5rem;
-}
