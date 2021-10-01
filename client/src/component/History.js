@@ -6,13 +6,17 @@ import './History.css'
 
 function History(props) {
     const [showTasks, setShowTasks] = useState(false)
+    const [currentIndex, setcurrentIndex] = useState(-1)
 
     useEffect(() => {
         props.onDisplayYearMonth()
-        props.onDisplayAll()
+        props.onDisplayAllDate()
     }, [])
 
-    const showHideTasks = (index) => {
+    const showHideTasks = (index, year, month, numday) => {
+        setcurrentIndex(index)
+        props.onDisplayDetails(year, month, numday)
+        
         if (!showTasks) {
             setShowTasks(true)
         } else {
@@ -26,19 +30,25 @@ function History(props) {
 
     const allYrMonths = props.yearMonth.map((date, index) => {
         return (
-            <button className="yrMonBtn" onClick={()=>sortByMonth(date.year, date.month)}>{date.month}</button>
+            <button className="yrMonBtn" key={index} onClick={()=>sortByMonth(date.year, date.month)}>{date.month}</button>
         )
     })
 
     const allTasks = props.everyTask.map((task, index) => {
         return (
-            <section key={index} className="dateDetails">
-                <div className="eachDate" onClick={() => showHideTasks(index)}>
-                    <h4>{task.month} {task.numday}, {task.day}</h4>
+            <section className="dateDetails">
+                <div className="eachDate" onClick={() => showHideTasks(index, task.year, task.month, task.numday)}>
+                        <h4>{task.month} {task.numday}, {task.day}</h4>
                 </div>
-                <div className="eachDetails">
-                    {showTasks && <TaskDetails year={task.year} month={task.month} numDay={task.numday} day={task.day} />}
-                </div>
+                {
+                    currentIndex === index && showTasks ? 
+                    (
+                        <div key= {index} className="eachDetail">
+                            {<TaskDetails />}
+                        </div>
+                    ) 
+                    :null
+                }
             </section>
         )
     })
@@ -65,9 +75,11 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onDisplayAll: () => dispatch(actionCreator.displayAllTasks()),
+        onDisplayAllDate: () => dispatch(actionCreator.displayAllTasks()),
         onDisplayYearMonth: () => dispatch(actionCreator.displayYearMonth()),
-        onSortByMonth: (year, month) => dispatch(actionCreator.sortDisplayByMonth(year, month))
+        onSortByMonth: (year, month) => dispatch(actionCreator.sortDisplayByMonth(year, month)),
+        onDisplayDetails: (year, month, day) => dispatch(actionCreator.displayDetailedTasks(year, month, day))
     }
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(History)

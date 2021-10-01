@@ -39,11 +39,15 @@
   
   .dateDetails {
     margin-left: 2rem;
+    text-align: center;
+  }
+  
+  .eachDate {
     background-color:cadetblue;
     border-radius: 10px;
     width: 15rem;
-    padding: auto 1rem;
-    text-align: center;
+    padding: 0.1rem 1rem;
   }
-
-  
+  .eachDetail {
+    background-color: yellow;
+  }

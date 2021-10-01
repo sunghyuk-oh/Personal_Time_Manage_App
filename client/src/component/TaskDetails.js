@@ -1,12 +1,6 @@
-import { useEffect } from 'react'
 import { connect } from 'react-redux'
-import * as actionCreator from '../store/actCreators'
 
 function TaskDetails(props) {
-
-    useEffect(() => {
-        props.onDisplayDetails(props.year, props.month, props.numDay)
-    }, [])
 
     const formatTime = (duration) => {
         const seconds = `${(duration % 60)}`.slice(-2)
@@ -22,7 +16,7 @@ function TaskDetails(props) {
           return `${hours} hr ${minutes} min ${seconds} sec`
         }
     }
-
+    
     const details = props.taskDetails.map((task, index) => {
         return (
             <li key={index}>
@@ -45,10 +39,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        onDisplayDetails: (year, month, day) => dispatch(actionCreator.displayDetailedTasks(year, month, day))
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(TaskDetails)
+export default connect(mapStateToProps)(TaskDetails)

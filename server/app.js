@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/api/tasks', (req, res) => {
-    db.any('SELECT year, month, numDay, day FROM tasks GROUP BY year, month, numDay, day ORDER BY numDay')
+    db.any('SELECT DISTINCT year, month, numday, day FROM tasks ORDER BY numday')
     .then(tasks => {
         res.json(tasks)
     })

@@ -5,6 +5,7 @@ export function Menu() {
         <nav className='navbar'>
             <ul>
                 <li><NavLink to='/'>Home</NavLink></li>
+                <li></li>
                 <li><NavLink to='/history'>History</NavLink></li>    
             </ul>
         </nav>
