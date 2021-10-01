@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const pgp = require('pg-promise')()
 const cors = require('cors')
-const db = pgp(process.env.DATABASE)
+const db = pgp('postgres://ecetaalc:SM6IesB0HofS-kAD-9YCq8jB1uVt8lQg@raja.db.elephantsql.com/ecetaalc')
 const PORT =  process.env.PORT || 8080
 
 app.use(cors())
