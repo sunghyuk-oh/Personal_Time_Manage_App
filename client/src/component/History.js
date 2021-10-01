@@ -38,17 +38,19 @@ function History(props) {
         return (
             <section className="dateDetails">
                 <div className="eachDate" onClick={() => showHideTasks(index, task.year, task.month, task.numday)}>
-                        <h4>{task.month} {task.numday}, {task.day}</h4>
+                    <div>
+                            <h4>{task.month} {task.numday}, {task.year}</h4>
+                    </div>
                 </div>
+                <div className="eachDetails">
                 {
                     currentIndex === index && showTasks ? 
                     (
-                        <div key= {index} className="eachDetail">
-                            {<TaskDetails />}
-                        </div>
+                        <TaskDetails />
                     ) 
                     :null
                 }
+                </div>
             </section>
         )
     })

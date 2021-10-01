@@ -53,7 +53,7 @@ function App() {
     const day = days[ now.getDay() ]
     const month = months[ now.getMonth() ]
 
-    fetch('http://localhost:8080/api/add-task', {
+    fetch('https://boiling-bastion-18822.herokuapp.com/api/add-task', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -87,7 +87,7 @@ function App() {
     const taskTitle = e.target.name
     setTask_times((task_times.filter(item => item.task !== taskTitle)))
 
-    fetch('http://localhost:8080/api/delete-task', {
+    fetch('https://boiling-bastion-18822.herokuapp.com/api/delete-task', {
       method: "DELETE",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({

@@ -19,17 +19,15 @@ function TaskDetails(props) {
     
     const details = props.taskDetails.map((task, index) => {
         return (
-            <li key={index}>
-                <h5>{task.task_title}</h5>
-                <h5>{formatTime(task.task_duration)}</h5>
-            </li>
+            <div key={index} className="detailsDescription">
+                <h4>{task.task_title}</h4>
+                <p>{formatTime(task.task_duration)}</p>
+            </div>
         )
     })
 
     return (
-        <div>
-            <ul>{details}</ul>
-        </div>
+        <div>{details}</div>
     )
 }
 

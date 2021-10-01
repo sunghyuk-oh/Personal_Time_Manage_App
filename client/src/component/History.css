@@ -7,7 +7,7 @@
   }
   
   .sidebar {
-    background-color: rgb(132, 211, 214);
+    
     width: 15rem;
     border-radius: 10px;
     height: 100vh;
@@ -27,27 +27,63 @@
   .yrMonBtn {
       margin: 0.5rem 1rem;
       border: none;
-      color: beige;
+      color: black;
   }
 
   .taskByDate {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: space-around;
     border-radius: 10px;
+    margin-left: 2rem;
   }
   
   .dateDetails {
-    margin-left: 2rem;
     text-align: center;
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 2rem;
   }
   
   .eachDate {
-    background-color:cadetblue;
+    border-left: thick double red;
+    box-shadow: 8px 6px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 20rem;
+    padding: 0.1rem 0.5rem;
+  }
+
+  .detailsDescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    border-left: thick double #32a1ce;
+    border-radius: 5px;
+    box-shadow: 8px 6px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 0 1rem;
+    
+  }
+
+
+
+
+
+  .eachDetail ul {
+    list-style: none;
+    width: 25rem;
+    border: 1px solid red;
+    padding-right: 10px;
+  }
+  
+  .eachDetail li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 35px 20px 0;
+    border: 1px solid red;
     border-radius: 10px;
-    width: 15rem;
-    padding: 0.1rem 1rem;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 0 1rem;
   }
-  .eachDetail {
-    background-color: yellow;
-  }
+  
