@@ -4,8 +4,9 @@ const express = require('express')
 const app = express()
 const pgp = require('pg-promise')()
 const cors = require('cors')
-
 const db = pgp(process.env.DATABASE)
+const PORT =  process.env.PORT || 8080
+
 app.use(cors())
 app.use(express.json())
 
@@ -61,4 +62,4 @@ app.delete('/api/delete-task', (req, res) => {
     .catch(e => console.error(e))
 })
 
-app.listen(process.env.PORT, () => console.log('Server is running...'))
+app.listen(PORT, () => console.log('Server is running...'))
