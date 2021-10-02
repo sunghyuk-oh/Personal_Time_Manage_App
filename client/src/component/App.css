@@ -3,7 +3,12 @@
 body {
   margin: 0 auto;
   font-family: "Quicksand", sans-serif;
-  background-color: #fffffb;
+  background: url("../background-img.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.95;
   color: #010b40;
 }
 
@@ -12,18 +17,37 @@ body {
 .navbar {
   margin-left: 30px;
   display: block;
-  margin: 1rem 0 5rem 2rem;
+  margin: 1rem 0 9rem 2rem;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar li {
+  padding-right: 3rem;
+  text-align: center;
+  color: #86a6ab;
+  font-weight: 600;
+}
+
+.navLink {
   text-decoration: none;
-  color: #338a3e;
-  padding-right: 1rem;
+  color: #a75d4c;
+  font-weight: bold;
+}
+
+.navLink:hover {
+  text-decoration: none;
+  color: #b1a2a1;
+}
+.navbar li img{
+  width: 40px;
+  height: 40px;
+  vertical-align:middle;
 }
 
 /********************* App Page *********************/
@@ -83,7 +107,7 @@ h3 {
   font-size: 28px;
 }
 
-button {
+.buttons button {
   outline: none;
   background: transparent;
   border: 1px solid #387002;
@@ -93,7 +117,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.buttons button:hover {
   background-color: #387002;
   color: #f8ffd7;
 }

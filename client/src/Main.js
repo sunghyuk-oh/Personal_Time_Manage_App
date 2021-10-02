@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom'
-import logo from './logo2.png'
+import logo from './logo.png'
 
 export function Menu() {
     return (
         <nav className='navbar'>
             <ul>
-                <li><NavLink to='/'>Home</NavLink></li>
-                {/* <li><img src={logo} /></li> */}
-                <li><NavLink to='/history'>History</NavLink></li>    
+                <li><NavLink to='/' className="navLink" activeClassName="active-navLink">Home</NavLink></li>
+                <li><img src={logo} />Daily Time Keeper</li>
+                <li><NavLink to='/history' className="navLink" activeClassName="active-navLink">History</NavLink></li>    
             </ul>
         </nav>
     )

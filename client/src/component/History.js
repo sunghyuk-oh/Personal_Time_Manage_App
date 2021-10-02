@@ -36,21 +36,22 @@ function History(props) {
 
     const allTasks = props.everyTask.map((task, index) => {
         return (
-            <section className="dateDetails">
+            <section key={index} className="dateDetails">
                 <div className="eachDate" onClick={() => showHideTasks(index, task.year, task.month, task.numday)}>
-                    <div>
-                            <h4>{task.month} {task.numday}, {task.year}</h4>
-                    </div>
+                  
+                    <h4>{task.month} {task.numday}, {task.year}</h4>
+                  
                 </div>
-                <div className="eachDetails">
                 {
                     currentIndex === index && showTasks ? 
                     (
-                        <TaskDetails />
+                        <div className="eachDetails">
+                            <TaskDetails />
+                        </div>
                     ) 
                     :null
                 }
-                </div>
+                
             </section>
         )
     })
