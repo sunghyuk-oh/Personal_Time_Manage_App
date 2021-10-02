@@ -21,7 +21,7 @@ app.get('/api/tasks', (req, res) => {
 app.get('/api/detailedTasks/:year/:month/:day', (req, res) => {
     const { year, month, day } = req.params
     
-    db.any("SELECT task_title, task_duration FROM tasks WHERE year = $1 AND month = $2 AND numday = $3", [year, month, day])
+    db.any("SELECT task_title, task_duration FROM tasks WHERE year = $1 AND month = $2 AND numday = $3 ORDER BY task_duration DESC", [year, month, day])
     .then(tasks => {
         res.json(tasks)
     })

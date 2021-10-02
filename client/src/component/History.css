@@ -70,7 +70,13 @@
     border-radius: 5px;
     box-shadow: 8px 6px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 0 1rem;
-    
+  }
+
+  .pieChart {
+    background-color: #c7af99;
+    border-radius: 10px;
+    box-shadow: 8px 6px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem;
   }
 
 

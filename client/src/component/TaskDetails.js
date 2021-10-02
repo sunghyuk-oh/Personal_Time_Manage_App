@@ -38,9 +38,9 @@ function TaskDetails(props) {
     return (
         <div>
             {details}
-            
-            <PieChart allTask={task_times}/>
-            
+            <div className="pieChart">
+                <PieChart allTask={task_times} />
+            </div>
         </div>
     )
 }

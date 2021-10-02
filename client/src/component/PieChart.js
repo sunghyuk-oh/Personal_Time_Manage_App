@@ -3,11 +3,22 @@ import { Pie } from 'react-chartjs-2';
 
 function PieChart(props) {
     const tasks = props.allTask.map(task => {
+      if(task.task) {
         return task.task
+      }  
+      if(task.task_title){
+        return task.task_title
+      }
+  
     })
 
     const durations = props.allTask.map(task => {
+      if(task.duration) {
         return task.duration
+      }  
+      if(task.task_duration){
+        return task.task_duration
+      }
     })
 
     const data = {
