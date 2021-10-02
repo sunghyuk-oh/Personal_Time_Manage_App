@@ -108,6 +108,7 @@ h3 {
 }
 
 .buttons button {
+  font-family: "Quicksand", sans-serif;
   outline: none;
   background: transparent;
   border: 1px solid #387002;
@@ -115,6 +116,7 @@ h3 {
   border-radius: 7px;
   color: #387002;
   cursor: pointer;
+  margin: 2px;
 }
 
 .buttons button:hover {
@@ -176,13 +178,16 @@ h3 {
 }
 
 #clearBtn {
+  font-family: "Quicksand", sans-serif;
   margin-left: 170px;
   border: 1px solid #7c8500;
+  border-radius: 3px;
   color: #7c8500;
 }
 
 #clearBtn:hover {
-  background-color: #524c00;
+  background-color:#c6a700;
+  border: 1px solid #c6a700;
   color: white;
 }
 

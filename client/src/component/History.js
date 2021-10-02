@@ -60,7 +60,10 @@ function History(props) {
         <main className="history-main">
             <article className="sidebar">
                 <h2>2021</h2>
-                <div className="months">{allYrMonths}</div>
+                <div className="months">
+                    <button className="yrMonBtn" onClick={() => props.onDisplayAllDate()}>All</button>
+                    {allYrMonths}
+                </div>
             </article>
             <article className="taskByDate">
                 {allTasks}
