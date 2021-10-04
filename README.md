@@ -40,6 +40,10 @@ This example shows how you can like any gif or sticker while the app stores the 
 
 
 
+https://user-images.githubusercontent.com/28845972/135874620-f15b497d-2bf7-4c35-9550-99843e4c7127.mov
+
+
+
 
 This example shows how our you can filter images with the sidebar categories and the search bar.
 
