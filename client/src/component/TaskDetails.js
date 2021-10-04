@@ -1,15 +1,7 @@
 import { connect } from 'react-redux'
 import PieChart from './PieChart'
-import { useEffect, useState } from 'react'
 
 function TaskDetails(props) {
-    const [task_times, setTask_times] = useState([])
-
-    useEffect(() => {
-        setTask_times(props.taskDetails)
-    }, [])
-    
-    console.log(props.taskDetails, task_times)
 
     const formatTime = (duration) => {
         const seconds = `${(duration % 60)}`.slice(-2)
@@ -39,7 +31,7 @@ function TaskDetails(props) {
         <div>
             {details}
             <div className="pieChart">
-                <PieChart allTask={task_times} />
+                <PieChart allTask={props.taskDetails} />
             </div>
         </div>
     )
