@@ -2,7 +2,7 @@
 
 __________________________________________________
 
-## Daily Time Keeper: ## 
+## Daily Time Keeper ## 
 
 [daily-time-keeper.surge.sh](http://daily-time-keeper.surge.sh)
 
