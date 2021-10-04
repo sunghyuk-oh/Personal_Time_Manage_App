@@ -2,35 +2,25 @@
 
 __________________________________________________
 
-## App Name: ## 
-
-**Daily Time Keeper**
+## Daily Time Keeper: ## 
 
 [daily-time-keeper.surge.sh](http://daily-time-keeper.surge.sh)
 
 __________________________________________________
 
 ## App Description:
-
+This is a simple task management app. Daily Time Keeper allows the users to create and manage all the tasks in one place. It tracks the tasks you do every day and views how much you spend time on each task. 
 
 __________________________________________________
 
 ## App Features: ##
-
+On the homepage, the users can enter the task title and start, pause, resume, and finish the stopwatch whenever they want. The task title and duration will display on the list once completing the task. The piechart will also display when the task is done. Each task in the piechart divides up into segments which shows the amount of time spent for each task compared to the amount of total time spent. On the history page, the users can view and find out all the tasks and durations they did on the specific date. The date can be sorted by month.
 __________________________________________________
 ## Live Screen Shots: ##
 
-This example shows how you can enter the task title and start, pause, resume, and finish the stopwatch. Once you finish the task, the task title and duration will display with the piechart.
-
 https://user-images.githubusercontent.com/28845972/135874620-f15b497d-2bf7-4c35-9550-99843e4c7127.mov
 
-
-
-This example shows how you can view all the tasks you did on the specific date.
-
-
 https://user-images.githubusercontent.com/28845972/135876492-c8e8eb80-fe90-4f63-9fe1-9053f3c9735b.mov
-
 
 
 ## Responsive Layout ##
@@ -44,12 +34,10 @@ https://user-images.githubusercontent.com/28845972/135876492-c8e8eb80-fe90-4f63-
 
 <img width="207" alt="mobile-layout1" src="https://user-images.githubusercontent.com/28845972/135884121-adfd6925-158a-48a6-981d-66420224cf8b.png"> <img width="207" alt="mobile-layout3" src="https://user-images.githubusercontent.com/28845972/135884144-44036ff3-7062-45bb-86e5-127659e49499.png">
 
-
 __________________________________________________
 
 ## Software Languages Used: ##
 **Front-End**     
-
 - HTML
 - CSS
 - JavaScript
@@ -58,12 +46,10 @@ __________________________________________________
 
   
  **Back-End**
-
 - Node.js
   - express
   - pg-promise
  
 **Database**
-
 - Elephant SQL
 - PostgreSQL
