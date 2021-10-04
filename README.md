@@ -55,6 +55,8 @@ https://user-images.githubusercontent.com/28845972/135876492-c8e8eb80-fe90-4f63-
 
 Tablet Display:
 
+<img width="338" alt="tablet-layout1" src="https://user-images.githubusercontent.com/28845972/135883994-25f042f7-f6ad-4d9d-8283-fcb8aed74c2b.png">
+<img width="338" alt="tablet-layout2" src="https://user-images.githubusercontent.com/28845972/135884033-cc59598f-4ffe-4811-83e9-66a84e82eaa5.png">
 
 
 Mobile Display:
