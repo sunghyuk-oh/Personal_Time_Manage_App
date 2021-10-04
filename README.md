@@ -61,9 +61,11 @@ Tablet Display:
 
 Mobile Display:
 
+<img width="207" alt="mobile-layout1" src="https://user-images.githubusercontent.com/28845972/135884121-adfd6925-158a-48a6-981d-66420224cf8b.png">
+<img width="207" alt="mobile-layout2" src="https://user-images.githubusercontent.com/28845972/135884138-d319b7ce-f37e-4877-879d-6e57647251b4.png">
+<img width="207" alt="mobile-layout3" src="https://user-images.githubusercontent.com/28845972/135884144-44036ff3-7062-45bb-86e5-127659e49499.png">
+<img width="207" alt="mobile-layout4" src="https://user-images.githubusercontent.com/28845972/135884151-2c68670e-5818-4c33-b8e7-d85ce7cebd18.png">
 
-
-Desktop Display:
 
 
 
