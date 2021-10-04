@@ -67,8 +67,10 @@ Mobile Display:
 <img width="207" alt="mobile-layout4" src="https://user-images.githubusercontent.com/28845972/135884151-2c68670e-5818-4c33-b8e7-d85ce7cebd18.png">
 
 
+__________________________________________________
 
-#### Front-End Technologies
+## Software Languages Used: ##
+**Front-End**     
 
 - HTML
 - CSS
@@ -77,20 +79,16 @@ Mobile Display:
 - React
 - Redux
 
-#### Back-End Technologies / Dependencies
+  
+ **Back-End**
 
 - Node.js
   - express
   - nodemailer
   - stripe
   - pg-promise
-
-#### Database:
+ 
+**Database**
 
 - Elephant SQL
 - PostgreSQL
-
-
-
-
-
