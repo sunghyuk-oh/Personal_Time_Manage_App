@@ -42,8 +42,7 @@ https://user-images.githubusercontent.com/28845972/135876492-c8e8eb80-fe90-4f63-
 
 **Mobile Display:**
 
-<img width="207" alt="mobile-layout1" src="https://user-images.githubusercontent.com/28845972/135884121-adfd6925-158a-48a6-981d-66420224cf8b.png">
-<img width="207" alt="mobile-layout3" src="https://user-images.githubusercontent.com/28845972/135884144-44036ff3-7062-45bb-86e5-127659e49499.png">
+<img width="207" alt="mobile-layout1" src="https://user-images.githubusercontent.com/28845972/135884121-adfd6925-158a-48a6-981d-66420224cf8b.png"> <img width="207" alt="mobile-layout3" src="https://user-images.githubusercontent.com/28845972/135884144-44036ff3-7062-45bb-86e5-127659e49499.png">
 
 
 __________________________________________________
