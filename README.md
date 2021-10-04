@@ -1,4 +1,4 @@
-# React Full Stack Project #
+# Solo React Project #
 
 __________________________________________________
 
