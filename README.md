@@ -18,21 +18,8 @@ __________________________________________________
 
 __________________________________________________
 
-## Software Languages Used: ##
-**Front-End**     
+## Features: ##
 
-  * React
-  * Redux
-  * CSS
-
-  
- **Back-End**
-
-  * Node.js
- 
-**Database**
-
-  * ElephantSQL
 __________________________________________________
 ## Live Screen Shots: ##
 
@@ -49,22 +36,18 @@ https://user-images.githubusercontent.com/28845972/135876492-c8e8eb80-fe90-4f63-
 
 
 
+## Responsive Layout ##
 
-
-## This shows the compatibility our app has with multiple screen sizes. ##
-
-Tablet Display:
+**Tablet Display:**
 
 <img width="338" alt="tablet-layout1" src="https://user-images.githubusercontent.com/28845972/135883994-25f042f7-f6ad-4d9d-8283-fcb8aed74c2b.png">
 <img width="338" alt="tablet-layout2" src="https://user-images.githubusercontent.com/28845972/135884033-cc59598f-4ffe-4811-83e9-66a84e82eaa5.png">
 
 
-Mobile Display:
+**Mobile Display:**
 
 <img width="207" alt="mobile-layout1" src="https://user-images.githubusercontent.com/28845972/135884121-adfd6925-158a-48a6-981d-66420224cf8b.png">
-<img width="207" alt="mobile-layout2" src="https://user-images.githubusercontent.com/28845972/135884138-d319b7ce-f37e-4877-879d-6e57647251b4.png">
 <img width="207" alt="mobile-layout3" src="https://user-images.githubusercontent.com/28845972/135884144-44036ff3-7062-45bb-86e5-127659e49499.png">
-<img width="207" alt="mobile-layout4" src="https://user-images.githubusercontent.com/28845972/135884151-2c68670e-5818-4c33-b8e7-d85ce7cebd18.png">
 
 
 __________________________________________________
