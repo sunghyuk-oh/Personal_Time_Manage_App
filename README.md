@@ -54,7 +54,6 @@ __________________________________________________
 
 - HTML
 - CSS
-- Sass
 - JavaScript
 - React
 - Redux
@@ -64,8 +63,6 @@ __________________________________________________
 
 - Node.js
   - express
-  - nodemailer
-  - stripe
   - pg-promise
  
 **Database**
