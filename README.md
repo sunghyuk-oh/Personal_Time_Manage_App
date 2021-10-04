@@ -6,9 +6,6 @@ __________________________________________________
 
 **Daily Time Keeper**
 
-**Website URL:**
-
-
 [daily-time-keeper.surge.sh](http://daily-time-keeper.surge.sh)
 
 __________________________________________________
