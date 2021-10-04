@@ -68,7 +68,27 @@ Mobile Display:
 
 
 
+#### Front-End Technologies
 
+- HTML
+- CSS
+- Sass
+- JavaScript
+- React
+- Redux
+
+#### Back-End Technologies / Dependencies
+
+- Node.js
+  - express
+  - nodemailer
+  - stripe
+  - pg-promise
+
+#### Database:
+
+- Elephant SQL
+- PostgreSQL
 
 
 
